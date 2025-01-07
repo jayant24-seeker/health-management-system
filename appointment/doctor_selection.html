@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Selection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/appointment/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-5">Select a Doctor</h2>
+        <form id="doctorForm">
+            <div class="form-group">
+                <label for="doctor">Choose Doctor:</label>
+                <select id="doctor" name="doctor" class="form-control">
+                    <option>Dr. Arpit</option>
+                    <option>Dr. Swaraj</option>
+                    <option>Dr. John</option>
+                    <option>Dr. David</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" id="finalmessage">Confirm</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('finalmessage').addEventListener('click', function(event) {
+            event.preventDefault();
+
+
+            window.location.href = 'final_message.html';
+        });
+    </script>
+</body>
+</html>

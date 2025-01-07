@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/appointment /assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center mt-5">Patient Form</h2>
+        <form id="patientForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="healthIssue">Health Issue:</label>
+                <textarea id="healthIssue" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="doctorbutton">Submit </button>
+        </form>
+    </div>
+    <script>
+
+        document.getElementById('doctorbutton').addEventListener('click', function() {
+            window.location.href = 'doctor_selection.html';
+        });
+    </script>
+</body>
+</html>
